@@ -5,9 +5,13 @@ import glob
 
 #Leer archivos y cargarlos en un dataframe
 def read_files(path,header):
+    df_union=[]
     files = glob.glob(path)
-    df = [pd.read_csv(f,names=header,sep=',')for f in files]
-    df_master = pd.concat(df,sort=False,ignore_index=True) 
+    for f in files:
+        df = pd.read_csv(f,names=header,sep=',')
+        df['source'] = f
+        df_union.append(df)
+    df_master = pd.concat(df_union,sort=False,ignore_index=True) 
     return df_master
 
 ###-Declarar variables - Rutas de archivos y encabezados-###
@@ -40,8 +44,5 @@ df_product_dim_crudo = read_files(path_files_mercado_product_dim,ventas_mercado_
 #region_dim
 df_region_dim_crudo = read_files(path_files_mercado_region_dim,ventas_mercado_region_dim_head)
 
-
 #limpieza de datos
 
-
-   
