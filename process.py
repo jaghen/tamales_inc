@@ -1,5 +1,8 @@
 import pandas as pd
 import glob
+from pandas.api.types import is_numeric_dtype
+from pandas.api.types import is_string_dtype
+from pandas.api.types import is_datetime64_any_dtype as is_datetime
 
 #Funciones
 
@@ -13,6 +16,35 @@ def read_files(path,header):
         df_union.append(df)
     df_master = pd.concat(df_union,sort=False,ignore_index=True) 
     return df_master
+
+#Limpieza y estandarizacion de datos
+def clean_data(df):
+    num_cols = [cols for cols in df.columns if is_numeric_dtype(df[cols]) and len(df[cols].dropna())>0]
+    iter_len_num = len(num_cols)
+    
+    string_cols = [cols for cols in df.columns if is_string_dtype(df[cols]) and len(df[cols].dropna())>0]
+    iter_len_string = len(string_cols)
+    
+    
+    #Eliminar filas con todos los datos vacios
+    df.dropna(how = 'all')
+    
+    #para campos numericos
+    print('Limpieza de campos numericos:')
+    for x,col_name in enumerate(num_cols):       
+        #En campos numericos, reemplazar valores nulos por 0 
+        df[col_name] = df[col_name].fillna(0)
+        print(x+1,' of ',iter_len_num,' completado ',col_name)
+    #para campos de tipo string    
+    print('Limpieza de campos de tipo cadena:')
+    for x,col_name in enumerate(string_cols):        
+        #Eliminar espacios en blaco para cadenas
+        df[col_name] = df[col_name].str.strip()
+        #Reemplazar cadenas vacias
+        df[col_name] = df[col_name].fillna('N/D')
+        print(x+1,' of ',iter_len_string,' completado ',col_name)
+    return df
+
 
 ###-Declarar variables - Rutas de archivos y encabezados-###
 
@@ -44,5 +76,23 @@ df_product_dim_crudo = read_files(path_files_mercado_product_dim,ventas_mercado_
 #region_dim
 df_region_dim_crudo = read_files(path_files_mercado_region_dim,ventas_mercado_region_dim_head)
 
+print('Proceso de carga terminado.')
+
 #limpieza de datos
+
+#Identificar valores nulos
+df_ventas_tamales_crudo.isnull().sum()
+df_fact_table_crudo.isnull().sum()
+df_product_dim_crudo.isnull().sum()
+df_region_dim_crudo.isnull().sum()
+
+#Ejecutar funcion de limpieza de datos
+
+df_ventas_tamales_crudo = clean_data(df_ventas_tamales_crudo)
+df_fact_table_crudo = clean_data(df_fact_table_crudo)
+df_product_dim_crudo = clean_data(df_product_dim_crudo)
+df_region_dim_crudo = clean_data(df_region_dim_crudo)
+print('Proceso de limpieza terminado.')
+
+
 
