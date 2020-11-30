@@ -3,6 +3,8 @@ import glob
 from pandas.api.types import is_numeric_dtype
 from pandas.api.types import is_string_dtype
 from pandas.api.types import is_datetime64_any_dtype as is_datetime
+import os
+from datetime import datetime
 
 #Funciones
 
@@ -35,6 +37,7 @@ def clean_data(df):
         #En campos numericos, reemplazar valores nulos por 0 
         df[col_name] = df[col_name].fillna(0)
         df[col_name] = pd.to_numeric(df[col_name])
+        df[col_name] = df[col_name].astype(int)
         print(x+1,' of ',iter_len_num,' completado ',col_name)
         
     #para campos de tipo string    
@@ -138,6 +141,7 @@ df_procesado_result['sales_cumulative'] = df_procesado_result.groupby(['region',
 df_procesado_result = df_procesado_result.sort_values(by = ['year','month_period','region','product'],ascending=[False,False,False,False])
 df_procesado_result['dif_vs_prev'] = df_procesado_result.groupby(['region','product'])['sales'].diff(periods=-1)
 #Resultado
+df_procesado_result = df_procesado_result.sort_values(by = ['region','product','year','month_period'],ascending=[False,False,False,False])
 df_procesado_result = df_procesado_result[['year','month','region','product','sales','sales_cumulative','dif_vs_prev']]
 
 
@@ -151,16 +155,45 @@ df_procesado_result_tamales_erp['sales_cumulative'] = df_procesado_result_tamale
 #Dif entre periodos
 df_procesado_result_tamales_erp = df_procesado_result_tamales_erp.sort_values(by = ['year','month_period','zone','product_name'],ascending=[False,False,False,False])
 df_procesado_result_tamales_erp['dif_vs_prev'] = df_procesado_result_tamales_erp.groupby(['zone','product_name'])['sales'].diff(periods=-1)
+df_procesado_result_tamales_erp = df_procesado_result_tamales_erp.sort_values(by = ['zone','product_name','year','month_period'],ascending=[False,False,False,False])
 #Resultado
 df_procesado_result_tamales_erp = df_procesado_result_tamales_erp[['year','month','zone','product_name','sales','sales_cumulative','dif_vs_prev']]
 
 
 print('Cubos terminados...')
 
-
 # Salidas de datos crudos a csv
+print('Generando salidas...')
 
 #Salidas de datos procesados a csv
 
+#crear directorios de salida
 
+today = datetime.today().strftime('%Y%m%d')
 
+crudo_output_path = 'resultados/crudo/generador/fuente/'+today+'/'
+procesado_output_path = 'resultados/procesado/generador/fuente/'+today+'/'
+
+if not os.path.exists(crudo_output_path):
+    os.makedirs(crudo_output_path)
+
+if not os.path.exists(procesado_output_path):
+    os.makedirs(procesado_output_path)
+
+#salida a csv
+
+#crudo
+df_ventas_tamales_crudo = df_ventas_tamales_crudo.iloc[:,0:10]
+
+df_ventas_tamales_crudo.to_csv(crudo_output_path+'ventas_tamales_crudo_'+today+'.csv', index=False)
+df_fact_table_crudo.to_csv(crudo_output_path+'fact_table_crudo_'+today+'.csv', index=False)
+df_product_dim_crudo.to_csv(crudo_output_path+'product_dim_crudo_'+today+'.csv', index=False)
+df_region_dim_crudo.to_csv(crudo_output_path+'region_dim_crudo_'+today+'.csv', index=False)
+
+#df_ventas_tamales_crudo.sales = df_ventas_tamales_crudo.sales.astype(int)
+#procesado
+
+df_procesado_result.to_csv(procesado_output_path+'cubo_teinvento_'+today+'.csv', index=False)
+df_procesado_result_tamales_erp.to_csv(procesado_output_path+'cubo_ventas_tamales_erp_'+today+'.csv', index=False)
+
+print('Fin del proceso.')
