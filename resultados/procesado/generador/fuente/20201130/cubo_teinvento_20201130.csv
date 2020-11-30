@@ -1,0 +1,255 @@
+year,month,region,product,sales,sales_cumulative,dif_vs_prev
+2019,Jan,Sur,Tamal mix Mole,2224,2224,
+2020,Apr,Sur,Tamal fitnes - Dulce,2725,2725,
+2020,May,Norte,Tameles doña chona -Piña,16357589,631590500,-989928.0
+2020,Apr,Norte,Tameles doña chona -Piña,17347517,615232911,-10477059.0
+2020,Mar,Norte,Tameles doña chona -Piña,27824576,597885394,5275776.0
+2020,Feb,Norte,Tameles doña chona -Piña,22548800,570060818,-1232216.0
+2020,Jan,Norte,Tameles doña chona -Piña,23781016,547512018,-4478268.0
+2019,Dec,Norte,Tameles doña chona -Piña,28259284,523731002,6339811.0
+2019,Nov,Norte,Tameles doña chona -Piña,21919473,495471718,770969.0
+2019,Oct,Norte,Tameles doña chona -Piña,21148504,473552245,-6687901.0
+2019,Sep,Norte,Tameles doña chona -Piña,27836405,452403741,4941816.0
+2019,Aug,Norte,Tameles doña chona -Piña,22894589,424567336,374736.0
+2019,Jul,Norte,Tameles doña chona -Piña,22519853,401672747,-6525449.0
+2019,Jun,Norte,Tameles doña chona -Piña,29045302,379152894,6475118.0
+2019,May,Norte,Tameles doña chona -Piña,22570184,350107592,1118168.0
+2019,Apr,Norte,Tameles doña chona -Piña,21452016,327537408,-4100217.0
+2019,Mar,Norte,Tameles doña chona -Piña,25552233,306085392,4622044.0
+2019,Feb,Norte,Tameles doña chona -Piña,20930189,280533159,649944.0
+2019,Jan,Norte,Tameles doña chona -Piña,20280245,259602970,-3078276.0
+2018,Dec,Norte,Tameles doña chona -Piña,23358521,239322725,3957705.0
+2018,Nov,Norte,Tameles doña chona -Piña,19400816,215964204,-288824.0
+2018,Oct,Norte,Tameles doña chona -Piña,19689640,196563388,-5746088.0
+2018,Sep,Norte,Tameles doña chona -Piña,25435728,176873748,5493848.0
+2018,Aug,Norte,Tameles doña chona -Piña,19941880,151438020,1502116.0
+2018,Jul,Norte,Tameles doña chona -Piña,18439764,131496140,-4284719.0
+2018,Jun,Norte,Tameles doña chona -Piña,22724483,113056376,4539356.0
+2018,May,Norte,Tameles doña chona -Piña,18185127,90331893,-139858.0
+2018,Apr,Norte,Tameles doña chona -Piña,18324985,72146766,-2537000.0
+2018,Mar,Norte,Tameles doña chona -Piña,20861985,53821781,4091441.0
+2018,Feb,Norte,Tameles doña chona -Piña,16770544,32959796,581292.0
+2018,Jan,Norte,Tameles doña chona -Piña,16189252,16189252,
+2020,May,Norte,Tamal mix Verde,15594724,638332953,130609.0
+2020,Apr,Norte,Tamal mix Verde,15464115,622738229,-9544910.0
+2020,Mar,Norte,Tamal mix Verde,25009025,607274114,4882152.0
+2020,Feb,Norte,Tamal mix Verde,20126873,582265089,-1317644.0
+2020,Jan,Norte,Tamal mix Verde,21444517,562138216,-4325077.0
+2019,Dec,Norte,Tamal mix Verde,25769594,540693699,5105978.0
+2019,Nov,Norte,Tamal mix Verde,20663616,514924105,182862.0
+2019,Oct,Norte,Tamal mix Verde,20480754,494260489,-6771477.0
+2019,Sep,Norte,Tamal mix Verde,27252231,473779735,4151355.0
+2019,Aug,Norte,Tamal mix Verde,23100876,446527504,145638.0
+2019,Jul,Norte,Tamal mix Verde,22955238,423426628,-6535289.0
+2019,Jun,Norte,Tamal mix Verde,29490527,400471390,6805833.0
+2019,May,Norte,Tamal mix Verde,22684694,370980863,1875350.0
+2019,Apr,Norte,Tamal mix Verde,20809344,348296169,-3309824.0
+2019,Mar,Norte,Tamal mix Verde,24119168,327486825,4366681.0
+2019,Feb,Norte,Tamal mix Verde,19752487,303367657,364257.0
+2019,Jan,Norte,Tamal mix Verde,19388230,283615170,-3885647.0
+2018,Dec,Norte,Tamal mix Verde,23273877,264226940,3645085.0
+2018,Nov,Norte,Tamal mix Verde,19628792,240953063,-1161472.0
+2018,Oct,Norte,Tamal mix Verde,20790264,221324271,-6910680.0
+2018,Sep,Norte,Tamal mix Verde,27700944,200534007,4839921.0
+2018,Aug,Norte,Tamal mix Verde,22861023,172833063,1635846.0
+2018,Jul,Norte,Tamal mix Verde,21225177,149972040,-5393992.0
+2018,Jun,Norte,Tamal mix Verde,26619169,128746863,5630992.0
+2018,May,Norte,Tamal mix Verde,20988177,102127694,3242.0
+2018,Apr,Norte,Tamal mix Verde,20984935,81139517,-2955151.0
+2018,Mar,Norte,Tamal mix Verde,23940086,60154582,5504311.0
+2018,Feb,Norte,Tamal mix Verde,18435775,36214496,657054.0
+2018,Jan,Norte,Tamal mix Verde,17778721,17778721,
+2020,May,Norte,Tamal mix Dulce,16594863,793204751,-1158432.0
+2020,Apr,Norte,Tamal mix Dulce,17753295,776609888,-12091268.0
+2020,Mar,Norte,Tamal mix Dulce,29844563,758856593,5372999.0
+2020,Feb,Norte,Tamal mix Dulce,24471564,729012030,-1325324.0
+2020,Jan,Norte,Tamal mix Dulce,25796888,704540466,-5557670.0
+2019,Dec,Norte,Tamal mix Dulce,31354558,678743578,6388739.0
+2019,Nov,Norte,Tamal mix Dulce,24965819,647389020,540380.0
+2019,Oct,Norte,Tamal mix Dulce,24425439,622423201,-7925849.0
+2019,Sep,Norte,Tamal mix Dulce,32351288,597997762,5172114.0
+2019,Aug,Norte,Tamal mix Dulce,27179174,565646474,316705.0
+2019,Jul,Norte,Tamal mix Dulce,26862469,538467300,-7690601.0
+2019,Jun,Norte,Tamal mix Dulce,34553070,511604831,6821555.0
+2019,May,Norte,Tamal mix Dulce,27731515,477051761,1075639.0
+2019,Apr,Norte,Tamal mix Dulce,26655876,449320246,-5099296.0
+2019,Mar,Norte,Tamal mix Dulce,31755172,422664370,5335229.0
+2019,Feb,Norte,Tamal mix Dulce,26419943,390909198,1026259.0
+2019,Jan,Norte,Tamal mix Dulce,25393684,364489255,-4503081.0
+2018,Dec,Norte,Tamal mix Dulce,29896765,339095571,4787786.0
+2018,Nov,Norte,Tamal mix Dulce,25108979,309198806,-1259205.0
+2018,Oct,Norte,Tamal mix Dulce,26368184,284089827,-8214168.0
+2018,Sep,Norte,Tamal mix Dulce,34582352,257721643,6207986.0
+2018,Aug,Norte,Tamal mix Dulce,28374366,223139291,1312942.0
+2018,Jul,Norte,Tamal mix Dulce,27061424,194764925,-6232443.0
+2018,Jun,Norte,Tamal mix Dulce,33293867,167703501,6326147.0
+2018,May,Norte,Tamal mix Dulce,26967720,134409634,-640458.0
+2018,Apr,Norte,Tamal mix Dulce,27608178,107441914,-4221253.0
+2018,Mar,Norte,Tamal mix Dulce,31829431,79833736,7020266.0
+2018,Feb,Norte,Tamal mix Dulce,24809165,48004305,1614025.0
+2018,Jan,Norte,Tamal mix Dulce,23195140,23195140,
+2019,Sep,Norte,Tamal fitnes - Dulce,11433,91076,-777.0
+2019,Jun,Norte,Tamal fitnes - Dulce,12210,79643,545.0
+2019,May,Norte,Tamal fitnes - Dulce,11665,67433,722.0
+2018,Apr,Norte,Tamal fitnes - Dulce,10943,55768,-4434.0
+2018,Mar,Norte,Tamal fitnes - Dulce,15377,44825,28.0
+2018,Feb,Norte,Tamal fitnes - Dulce,15349,29448,1250.0
+2018,Jan,Norte,Tamal fitnes - Dulce,14099,14099,
+2020,May,Norte,Champurrado Ramirez,5447497,249235868,-215286.0
+2020,Apr,Norte,Champurrado Ramirez,5662783,243788371,-4043712.0
+2020,Mar,Norte,Champurrado Ramirez,9706495,238125588,1973660.0
+2020,Feb,Norte,Champurrado Ramirez,7732835,228419093,-106854.0
+2020,Jan,Norte,Champurrado Ramirez,7839689,220686258,-1623377.0
+2019,Dec,Norte,Champurrado Ramirez,9463066,212846569,1767506.0
+2019,Nov,Norte,Champurrado Ramirez,7695560,203383503,15211.0
+2019,Oct,Norte,Champurrado Ramirez,7680349,195687943,-2406573.0
+2019,Sep,Norte,Champurrado Ramirez,10086922,188007594,1627687.0
+2019,Aug,Norte,Champurrado Ramirez,8459235,177920672,67791.0
+2019,Jul,Norte,Champurrado Ramirez,8391444,169461437,-2576888.0
+2019,Jun,Norte,Champurrado Ramirez,10968332,161069993,2118787.0
+2019,May,Norte,Champurrado Ramirez,8849545,150101661,291853.0
+2019,Apr,Norte,Champurrado Ramirez,8557692,141252116,-1449289.0
+2019,Mar,Norte,Champurrado Ramirez,10006981,132694424,1849985.0
+2019,Feb,Norte,Champurrado Ramirez,8156996,122687443,366357.0
+2019,Jan,Norte,Champurrado Ramirez,7790639,114530447,-1598065.0
+2018,Dec,Norte,Champurrado Ramirez,9388704,106739808,1537324.0
+2018,Nov,Norte,Champurrado Ramirez,7851380,97351104,-564292.0
+2018,Oct,Norte,Champurrado Ramirez,8415672,89499724,-2816345.0
+2018,Sep,Norte,Champurrado Ramirez,11232017,81084052,2065534.0
+2018,Aug,Norte,Champurrado Ramirez,9166483,69852035,649511.0
+2018,Jul,Norte,Champurrado Ramirez,8516972,60685552,-2063847.0
+2018,Jun,Norte,Champurrado Ramirez,10580819,52168580,2052061.0
+2018,May,Norte,Champurrado Ramirez,8528758,41587761,-140719.0
+2018,Apr,Norte,Champurrado Ramirez,8669477,33059003,-1237374.0
+2018,Mar,Norte,Champurrado Ramirez,9906851,24389526,2430323.0
+2018,Feb,Norte,Champurrado Ramirez,7476528,14482675,470381.0
+2018,Jan,Norte,Champurrado Ramirez,7006147,7006147,
+2020,May,Norte,Atoles doña chona - Cajeta,95790,4821472,-625.0
+2020,Apr,Norte,Atoles doña chona - Cajeta,96415,4725682,-72835.0
+2020,Mar,Norte,Atoles doña chona - Cajeta,169250,4629267,34289.0
+2020,Feb,Norte,Atoles doña chona - Cajeta,134961,4460017,691.0
+2020,Jan,Norte,Atoles doña chona - Cajeta,134270,4325056,-36760.0
+2019,Dec,Norte,Atoles doña chona - Cajeta,171030,4190786,27306.0
+2019,Nov,Norte,Atoles doña chona - Cajeta,143724,4019756,-5258.0
+2019,Oct,Norte,Atoles doña chona - Cajeta,148982,3876032,-33738.0
+2019,Sep,Norte,Atoles doña chona - Cajeta,182720,3727050,18517.0
+2019,Aug,Norte,Atoles doña chona - Cajeta,164203,3544330,-787.0
+2019,Jul,Norte,Atoles doña chona - Cajeta,164990,3380127,-50740.0
+2019,Jun,Norte,Atoles doña chona - Cajeta,215730,3215137,50940.0
+2019,May,Norte,Atoles doña chona - Cajeta,164790,2999407,2035.0
+2019,Apr,Norte,Atoles doña chona - Cajeta,162755,2834617,-36050.0
+2019,Mar,Norte,Atoles doña chona - Cajeta,198805,2671862,49721.0
+2019,Feb,Norte,Atoles doña chona - Cajeta,149084,2473057,10608.0
+2019,Jan,Norte,Atoles doña chona - Cajeta,138476,2323973,-40596.0
+2018,Dec,Norte,Atoles doña chona - Cajeta,179072,2185497,31024.0
+2018,Nov,Norte,Atoles doña chona - Cajeta,148048,2006425,-19275.0
+2018,Oct,Norte,Atoles doña chona - Cajeta,167323,1858377,-43174.0
+2018,Sep,Norte,Atoles doña chona - Cajeta,210497,1691054,37512.0
+2018,Aug,Norte,Atoles doña chona - Cajeta,172985,1480557,7086.0
+2018,Jul,Norte,Atoles doña chona - Cajeta,165899,1307572,-65448.0
+2018,Jun,Norte,Atoles doña chona - Cajeta,231347,1141673,43322.0
+2018,May,Norte,Atoles doña chona - Cajeta,188025,910326,-3240.0
+2018,Apr,Norte,Atoles doña chona - Cajeta,191265,722301,-34734.0
+2018,Mar,Norte,Atoles doña chona - Cajeta,225999,531036,64037.0
+2018,Feb,Norte,Atoles doña chona - Cajeta,161962,305037,18887.0
+2018,Jan,Norte,Atoles doña chona - Cajeta,143075,143075,
+2020,May,Norte,Atole mix Cajeta,35412,14506439,-3750.0
+2020,Apr,Norte,Atole mix Cajeta,39162,14471027,-28340.0
+2020,Mar,Norte,Atole mix Cajeta,67502,14431865,11.0
+2020,Feb,Norte,Atole mix Cajeta,67491,14364363,-15513.0
+2020,Jan,Norte,Atole mix Cajeta,83004,14296872,-40812.0
+2019,Dec,Norte,Atole mix Cajeta,123816,14213868,-15624.0
+2019,Nov,Norte,Atole mix Cajeta,139440,14090052,-110918.0
+2019,Oct,Norte,Atole mix Cajeta,250358,13950612,-413191.0
+2019,Sep,Norte,Atole mix Cajeta,663549,13700254,-31965.0
+2019,Aug,Norte,Atole mix Cajeta,695514,13036705,27821.0
+2019,Jul,Norte,Atole mix Cajeta,667693,12341191,-161995.0
+2019,Jun,Norte,Atole mix Cajeta,829688,11673498,131761.0
+2019,May,Norte,Atole mix Cajeta,697927,10843810,50082.0
+2019,Apr,Norte,Atole mix Cajeta,647845,10145883,-129406.0
+2019,Mar,Norte,Atole mix Cajeta,777251,9498038,191581.0
+2019,Feb,Norte,Atole mix Cajeta,585670,8720787,46294.0
+2019,Jan,Norte,Atole mix Cajeta,539376,8135117,-133632.0
+2018,Dec,Norte,Atole mix Cajeta,673008,7595741,126715.0
+2018,Nov,Norte,Atole mix Cajeta,546293,6922733,-56831.0
+2018,Oct,Norte,Atole mix Cajeta,603124,6376440,-178817.0
+2018,Sep,Norte,Atole mix Cajeta,781941,5773316,138256.0
+2018,Aug,Norte,Atole mix Cajeta,643685,4991375,38078.0
+2018,Jul,Norte,Atole mix Cajeta,605607,4347690,-153200.0
+2018,Jun,Norte,Atole mix Cajeta,758807,3742083,156940.0
+2018,May,Norte,Atole mix Cajeta,601867,2983276,-13430.0
+2018,Apr,Norte,Atole mix Cajeta,615297,2381409,-100948.0
+2018,Mar,Norte,Atole mix Cajeta,716245,1766112,172028.0
+2018,Feb,Norte,Atole mix Cajeta,544217,1049867,38567.0
+2018,Jan,Norte,Atole mix Cajeta,505650,505650,
+2020,May,E. Privados,Tamales doña chona - Chocolate,9,166,-3.0
+2020,Apr,E. Privados,Tamales doña chona - Chocolate,12,157,-1.0
+2020,Mar,E. Privados,Tamales doña chona - Chocolate,13,145,1.0
+2020,Feb,E. Privados,Tamales doña chona - Chocolate,12,132,-3.0
+2020,Jan,E. Privados,Tamales doña chona - Chocolate,15,120,2.0
+2019,Dec,E. Privados,Tamales doña chona - Chocolate,13,105,7.0
+2019,Nov,E. Privados,Tamales doña chona - Chocolate,6,92,-7.0
+2019,Oct,E. Privados,Tamales doña chona - Chocolate,13,86,-2.0
+2019,Sep,E. Privados,Tamales doña chona - Chocolate,15,73,11.0
+2019,Aug,E. Privados,Tamales doña chona - Chocolate,4,58,-1.0
+2019,Jul,E. Privados,Tamales doña chona - Chocolate,5,54,-5.0
+2019,Jun,E. Privados,Tamales doña chona - Chocolate,10,49,5.0
+2019,May,E. Privados,Tamales doña chona - Chocolate,5,39,-3.0
+2019,Apr,E. Privados,Tamales doña chona - Chocolate,8,34,2.0
+2019,Mar,E. Privados,Tamales doña chona - Chocolate,6,26,1.0
+2019,Jan,E. Privados,Tamales doña chona - Chocolate,5,20,1.0
+2018,Dec,E. Privados,Tamales doña chona - Chocolate,4,15,0.0
+2018,Nov,E. Privados,Tamales doña chona - Chocolate,4,11,1.0
+2018,Apr,E. Privados,Tamales doña chona - Chocolate,3,7,-1.0
+2018,Mar,E. Privados,Tamales doña chona - Chocolate,4,4,
+2020,Jan,E. Privados,Tamal mix Mole,1,1696,0.0
+2019,Nov,E. Privados,Tamal mix Mole,1,1695,0.0
+2019,Oct,E. Privados,Tamal mix Mole,1,1694,-6.0
+2019,Jul,E. Privados,Tamal mix Mole,7,1693,-62.0
+2019,Jun,E. Privados,Tamal mix Mole,69,1686,66.0
+2019,May,E. Privados,Tamal mix Mole,3,1617,-3.0
+2019,Apr,E. Privados,Tamal mix Mole,6,1614,-7.0
+2019,Mar,E. Privados,Tamal mix Mole,13,1608,-872.0
+2019,Feb,E. Privados,Tamal mix Mole,885,1595,184.0
+2018,Oct,E. Privados,Tamal mix Mole,701,710,700.0
+2018,Sep,E. Privados,Tamal mix Mole,1,9,0.0
+2018,Aug,E. Privados,Tamal mix Mole,1,8,-3.0
+2018,Apr,E. Privados,Tamal mix Mole,4,7,1.0
+2018,Feb,E. Privados,Tamal mix Mole,3,3,
+2020,May,E. Privados,Atole mix Arroz,643,1052,639.0
+2020,Jan,E. Privados,Atole mix Arroz,4,409,2.0
+2019,Dec,E. Privados,Atole mix Arroz,2,405,-1.0
+2019,Aug,E. Privados,Atole mix Arroz,3,403,1.0
+2019,May,E. Privados,Atole mix Arroz,2,400,-67.0
+2019,Mar,E. Privados,Atole mix Arroz,69,398,5.0
+2018,Sep,E. Privados,Atole mix Arroz,64,329,59.0
+2018,Aug,E. Privados,Atole mix Arroz,5,265,-106.0
+2018,Jun,E. Privados,Atole mix Arroz,111,260,103.0
+2018,May,E. Privados,Atole mix Arroz,8,149,4.0
+2018,Apr,E. Privados,Atole mix Arroz,4,141,-2.0
+2018,Mar,E. Privados,Atole mix Arroz,6,137,3.0
+2018,Feb,E. Privados,Atole mix Arroz,3,131,-125.0
+2018,Jan,E. Privados,Atole mix Arroz,128,128,
+2018,Dec,Centro,Tamal mix Mole,3951,10844,-2942.0
+2018,Nov,Centro,Tamal mix Mole,6893,6893,
+2020,May,Centro,Tamal fitnes - Dulce,4133,159446,-5243.0
+2020,Mar,Centro,Tamal fitnes - Dulce,9376,155313,3356.0
+2020,Feb,Centro,Tamal fitnes - Dulce,6020,145937,2288.0
+2020,Jan,Centro,Tamal fitnes - Dulce,3732,139917,-2916.0
+2019,Dec,Centro,Tamal fitnes - Dulce,6648,136185,-1151.0
+2019,Nov,Centro,Tamal fitnes - Dulce,7799,129537,741.0
+2019,Oct,Centro,Tamal fitnes - Dulce,7058,121738,-1684.0
+2019,Aug,Centro,Tamal fitnes - Dulce,8742,114680,-83.0
+2019,Jul,Centro,Tamal fitnes - Dulce,8825,105938,-862.0
+2019,Apr,Centro,Tamal fitnes - Dulce,9687,97113,449.0
+2019,Mar,Centro,Tamal fitnes - Dulce,9238,87426,349.0
+2019,Feb,Centro,Tamal fitnes - Dulce,8889,78188,532.0
+2019,Jan,Centro,Tamal fitnes - Dulce,8357,69299,-769.0
+2018,Dec,Centro,Tamal fitnes - Dulce,9126,60942,2587.0
+2018,Nov,Centro,Tamal fitnes - Dulce,6539,51816,493.0
+2018,Oct,Centro,Tamal fitnes - Dulce,6046,45277,-2647.0
+2018,Sep,Centro,Tamal fitnes - Dulce,8693,39231,2909.0
+2018,Aug,Centro,Tamal fitnes - Dulce,5784,30538,-550.0
+2018,Jul,Centro,Tamal fitnes - Dulce,6334,24754,-2930.0
+2018,Jun,Centro,Tamal fitnes - Dulce,9264,18420,108.0
+2018,May,Centro,Tamal fitnes - Dulce,9156,9156,

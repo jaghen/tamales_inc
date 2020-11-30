@@ -1,0 +1,6 @@
+id_region,country,region,source
+446676598784,Mexico,Norte,teinvento_inc/ventas_reportadas_mercado_tamales/mx/20200801/region_dim/part-00000-tid-4358683422233625315-ac4f46ee-6170-46aa-81af-a5be84d57bf5-20305-1-c000.csv
+850403524608,Mexico,Sur,teinvento_inc/ventas_reportadas_mercado_tamales/mx/20200801/region_dim/part-00001-tid-4358683422233625315-ac4f46ee-6170-46aa-81af-a5be84d57bf5-20306-1-c000.csv
+893353197568,Mexico,Centro,teinvento_inc/ventas_reportadas_mercado_tamales/mx/20200801/region_dim/part-00002-tid-4358683422233625315-ac4f46ee-6170-46aa-81af-a5be84d57bf5-20307-1-c000.csv
+996432412672,Mexico,N/D,teinvento_inc/ventas_reportadas_mercado_tamales/mx/20200801/region_dim/part-00003-tid-4358683422233625315-ac4f46ee-6170-46aa-81af-a5be84d57bf5-20308-1-c000.csv
+1151051235328,Mexico,E. Privados,teinvento_inc/ventas_reportadas_mercado_tamales/mx/20200801/region_dim/part-00004-tid-4358683422233625315-ac4f46ee-6170-46aa-81af-a5be84d57bf5-20309-1-c000.csv
