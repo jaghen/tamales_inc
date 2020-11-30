@@ -34,7 +34,9 @@ def clean_data(df):
     for x,col_name in enumerate(num_cols):       
         #En campos numericos, reemplazar valores nulos por 0 
         df[col_name] = df[col_name].fillna(0)
+        df[col_name] = pd.to_numeric(df[col_name])
         print(x+1,' of ',iter_len_num,' completado ',col_name)
+        
     #para campos de tipo string    
     print('Limpieza de campos de tipo cadena:')
     for x,col_name in enumerate(string_cols):        
@@ -43,6 +45,7 @@ def clean_data(df):
         #Reemplazar cadenas vacias
         df[col_name] = df[col_name].fillna('N/D')
         print(x+1,' of ',iter_len_string,' completado ',col_name)
+    #Quitamos ventas con valores negativos o cero
     return df
 
 
@@ -93,6 +96,71 @@ df_fact_table_crudo = clean_data(df_fact_table_crudo)
 df_product_dim_crudo = clean_data(df_product_dim_crudo)
 df_region_dim_crudo = clean_data(df_region_dim_crudo)
 print('Proceso de limpieza terminado.')
+
+#Quitar ventas con valores negativos y cero
+
+df_ventas_tamales_crudo=df_ventas_tamales_crudo[df_ventas_tamales_crudo['sales']>0]
+df_fact_table_crudo=df_fact_table_crudo[df_fact_table_crudo['sales']>0]
+#Procesamiento de datos, generar cubo de informacion.
+
+#---Métricas a integrar:
+#1) Ventas mensuales
+#2) Ventas mensuales acumuladas
+#3) Diferencia % vs el mes anterior
+
+#---Agregaciones importantes para el cubo:
+#1) Producto, marca
+#2) Año, mes
+#3) Estado
+
+print('Generando cubo...')
+
+df_procesado = df_fact_table_crudo.merge(df_product_dim_crudo, 
+                          left_on='id_product', 
+                          right_on='id_product', 
+                          how='left', 
+                          suffixes=('_fact', '_product')) 
+
+df_procesado = df_procesado.merge(df_region_dim_crudo, 
+                          left_on='id_region', 
+                          right_on='id_region', 
+                          how='left', 
+                          suffixes=('_procesado', '_region'))
+
+##Teinvento Inc.
+#Ventas mensuales
+df_procesado['month_period'] = pd.to_datetime(df_procesado.month, format='%b', errors='coerce').dt.month
+df_procesado_result = df_procesado.groupby(['year','month','month_period','region','product','producer'],as_index=False).agg({'sales':'sum'})
+df_procesado_result = df_procesado_result.sort_values(by = ['year','month_period','region','producer','product'],ascending=[True,True,True,True,True])
+#Ventas mensuales acumuladas
+df_procesado_result['sales_cumulative'] = df_procesado_result.groupby(['region','product'])['sales'].apply(lambda x: x.cumsum())
+#Dif entre periodos
+df_procesado_result = df_procesado_result.sort_values(by = ['year','month_period','region','product'],ascending=[False,False,False,False])
+df_procesado_result['dif_vs_prev'] = df_procesado_result.groupby(['region','product'])['sales'].diff(periods=-1)
+#Resultado
+df_procesado_result = df_procesado_result[['year','month','region','product','sales','sales_cumulative','dif_vs_prev']]
+
+
+#ERP Tamales Inc.
+#Ventas mensuales
+df_ventas_tamales_crudo['month_period'] = pd.to_datetime(df_ventas_tamales_crudo.month, format='%b', errors='coerce').dt.month
+df_procesado_result_tamales_erp = df_ventas_tamales_crudo.groupby(['year','month','month_period','zone','product_name'],as_index=False).agg({'sales':'sum'})
+df_procesado_result_tamales_erp = df_procesado_result_tamales_erp.sort_values(by = ['year','month_period','zone','product_name'],ascending=[True,True,True,True])
+#Ventas mensuales acumuladas
+df_procesado_result_tamales_erp['sales_cumulative'] = df_procesado_result_tamales_erp.groupby(['zone','product_name'])['sales'].apply(lambda x: x.cumsum())
+#Dif entre periodos
+df_procesado_result_tamales_erp = df_procesado_result_tamales_erp.sort_values(by = ['year','month_period','zone','product_name'],ascending=[False,False,False,False])
+df_procesado_result_tamales_erp['dif_vs_prev'] = df_procesado_result_tamales_erp.groupby(['zone','product_name'])['sales'].diff(periods=-1)
+#Resultado
+df_procesado_result_tamales_erp = df_procesado_result_tamales_erp[['year','month','zone','product_name','sales','sales_cumulative','dif_vs_prev']]
+
+
+print('Cubos terminados...')
+
+
+# Salidas de datos crudos a csv
+
+#Salidas de datos procesados a csv
 
 
 
